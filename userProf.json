@@ -1,6 +1,6 @@
 {
     "passengerInfo" : [
-         {
+        {
             "name" : "Mr Ravinder Rawat",
             "type" : "Male",
             "age"  : "29",
@@ -18,7 +18,7 @@
             "authNo"  : "PP-2341",
             "flightNo" : "A1-315"
         },
-         {
+        {
             "name" : "Vivek",
             "type" : "Male",
             "age"  : "26",
@@ -36,7 +36,7 @@
             "authNo"  : "DL-5740",
             "flightNo" : "A1-315"
         },
-         {
+        {
             "name" : "Som",
             "type" : "Male",
             "age"  : "32",
