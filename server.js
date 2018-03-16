@@ -70,7 +70,6 @@ app.use(compression({ threshold: 0 }))
 app.use('/yatra_asi', serve('./yatra_asi', true))
 app.use('/public', serve('./public', true))
 app.use('/manifest.json', serve('./manifest.json', true))
-app.use('./yatra_asi/asi-service-worker.js', serve('./yatra_asi/asi-service-worker.js'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use('/asi',routes)
@@ -125,25 +124,28 @@ app.get('*', isProd ? render : (req, res) => {
 })
 
 app.post('/newMessages', function (req, res) {
-  var data = req.body; // New messages in the "body" variable
+  var data = req.body;
   console.log(data)
-  var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
-  var data = {
-    phone: data.messages[0].chatId.split('@')[0], // Receivers phone
-    body: 'Your Seat has been booked', // Сообщение
-};
-// Send a request
-request({
-    url: url,
-    method: "POST",
-    json: data
-});//Response does not matter
+  if(!data.messages[0].fromMe){
+       var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
+        var data = {
+          phone: data.messages[0].chatId.split('@')[0], // Receivers phone
+          body: 'Your Seat has been booked', // Сообщение
+      };
+      // Send a request
+      request({
+          url: url,
+          method: "POST",
+          json: data
+      });//Response does not matter
+  }
+   
+  res.send('Hello')
 });
 
 
 
 const port = process.env.PORT || 8282
- opn("http://asitickets.com")
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`)
 })

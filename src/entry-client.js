@@ -59,7 +59,3 @@ router.onReady(() => {
   app.$mount('#app')
 })
 
-// service worker
-if ('https:' === location.protocol && navigator.serviceWorker) {
-  navigator.serviceWorker.register('../yatra_asi/asi-service-worker.js')
-}
