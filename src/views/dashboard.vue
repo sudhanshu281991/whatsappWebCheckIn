@@ -1,20 +1,19 @@
 <template>
   <div>
-    <user-profile></user-profile>
-    <seat-map></seat-map> 
+    <user-profile class="col-left"></user-profile>
+    <seat-map class="col-right"></seat-map> 
   </div>
 </template>
 <script>
-      import json from '../data/userProf.json'
       export default{
           data(){
               return{
-                  myJson: json
+                
               }
           },
 		  components: {
-			  UserProfile : () => import('../components/seat-map.vue'),
-			  SeatMap : () => import('../components/user-profile.vue')  
+			  UserProfile : () => import('../components/user-profile.vue'),
+			  SeatMap : () => import('../components/seat-map.vue')  
 			}
       }
 </script>

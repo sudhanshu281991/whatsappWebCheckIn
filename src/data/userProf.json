@@ -1,42 +1,37 @@
-<<<<<<< Updated upstream
 {
-    "passengerInfo" : {
-        "passenger1" : {
-=======
-[
+    "passengerInfo" : [
          {
->>>>>>> Stashed changes
-            "name" : "Ravi",
-            "type" : "Female",
+            "name" : "Mr Ravinder Rawat",
+            "type" : "Male",
             "age"  : "29",
-            "mob"  : "8587823826",
+            "mob"  : "918587823826",
             "authType" : "DL",
             "authNo"  : "DL-5732",
             "flightNo" : "A1-315"
         },
-       {
+        {
             "name" : "Sudhanshu",
             "type" : "Female",
             "age"  : "27",
-            "mob"  : "8750304320",
+            "mob"  : "919045327981",
             "authType" : "PP",
             "authNo"  : "PP-2341",
             "flightNo" : "A1-315"
         },
-        {
+         {
             "name" : "Vivek",
             "type" : "Male",
             "age"  : "26",
-            "mob"  : "8860906573",
+            "mob"  : "918860906573",
             "authType" : "PC",
             "authNo"  : "AOXPT3670C",
             "flightNo" : "A1-315"
         },
-       {
+        {
             "name" : "Vinay",
             "type" : "Male",
             "age"  : "29",
-            "mob"  : "1234567890",
+            "mob"  : "917532068953",
             "authType" : "DL",
             "authNo"  : "DL-5740",
             "flightNo" : "A1-315"
@@ -45,10 +40,10 @@
             "name" : "Som",
             "type" : "Male",
             "age"  : "32",
-            "mob"  : "9953873317",
+            "mob"  : "919953873317",
             "authType" : "AC",
             "authNo"  : "98218732093203",
             "flightNo" : "A1-315"
         }
- 
-	]
+    ]
+}
