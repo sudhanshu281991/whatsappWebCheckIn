@@ -1,0 +1,13 @@
+{
+  "name": "ASI Yatra",
+  "short_name": "ASI Yatea",
+  "icons": [{
+      "src": "/public/manifest.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    }],
+  "start_url": "/asi/",
+  "background_color": "#2387F5",
+  "display": "standalone",
+  "theme_color": "#2387F5"
+}
