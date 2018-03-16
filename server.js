@@ -143,8 +143,27 @@ app.post('/newMessages', function (req, res) {
   res.send('Hello')
 });
 
-let t = fs.readFileSync('seatFJson.json', 'utf8')
-t= t=="" ? {} :JSON.parse(t)
+app.post('/api/sendWhatsAppWebCheckinNotification', function (req, res) {
+  let t = fs.readFileSync('userProf.json', 'utf8')
+  let seatInfo = fs.readFileSync('seatFJson.json', 'utf8')
+  t= t=="" ? {} :JSON.parse(t)
+  seatInfo= t=="" ? {} :JSON.parse(seatInfo)
+  for(var i=0;i<t.passengerInfo.length;i++){
+    var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
+    var data = {
+      phone: t.passengerInfo[i].mob, // Receivers phone
+      body: `Hi ${t.passengerInfo[i].name},\nSeats are filling fast for your booked flight ${seatInfo.data.vendor} ${t.passengerInfo[i].flightNo} from ${seatInfo.data.originCity} to ${seatInfo.data.destinationCity} at ${seatInfo.data.timings}.\n\nPlease provide your preferred flight no eg:1C,2B\n\n`, // Сообщение
+  };
+  request({
+      url: url,
+      method: "POST",
+      json: data
+  });//Response does not matter
+  }
+  res.send('Hello')
+});
+
+
 
 const port = process.env.PORT || 8282
 app.listen(port, () => {
