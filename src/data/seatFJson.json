@@ -1,0 +1,1284 @@
+flightInfo = {
+	"data" :{
+		"flightName" : "Indigo-A1",
+		"flightNumber" : "A1-315",
+		"timings" : "23:10",
+		"vendor" : "Indigo",
+		"originCity" : "Bikaner",
+		"destinationCity" : "Delhi",
+		"flightInfra" : { 
+			"rows" : "30",
+			"column" : "6",
+			"firstClass" : "33",
+			"economy" : "115",
+            "reserved" : "32",
+            "paid" : {
+                "fc" : "3",
+                "eco" : "25",
+                "rsvd" : "2"
+            }
+		},
+		"seatMatrix" : {
+			"SeatNo_A01" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B01" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C01" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D01" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E01" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F01" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A02" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B02" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C02" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D02" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E02" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F02" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A03" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B03" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C03" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D03" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E03" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F03" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A04" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B04" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C04" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D04" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E04" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F04" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A05" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B05" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C05" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+            },
+            "SeatNo_D05" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E05" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F05" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_A06" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B06" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C06" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D06" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E06" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F06" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A07" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B07" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C07" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D07" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E07" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F07" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A08" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B08" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C08" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D08" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E08" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F08" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A09" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B09" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C09" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_D09" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E09" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F09" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A10" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B10" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C10" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D10" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E10" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F10" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A11" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B11" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C11" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D11" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E11" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F11" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A12" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B12" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C12" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D12" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E12" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F12" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A13" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B13" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C13" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+            },
+            "SeatNo_D13" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E13" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F13" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A14" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B14" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C14" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D14" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E14" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F14" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A15" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B15" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C15" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D15" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E15" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F15" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A16" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B16" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C16" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D16" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E16" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F16" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A17" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B17" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C17" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D17" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E17" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F17" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A18" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B18" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C18" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D18" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E18" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F18" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A19" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B19" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C19" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D19" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E19" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F19" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A20" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B20" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C20" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D20" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E20" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F20" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A21" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B21" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C21" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D21" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E21" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F21" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A22" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B22" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C22" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D22" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E22" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F22" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A23" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B23" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C23" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D23" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E23" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F23" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A24" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B24" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C24" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D24" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E24" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F24" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A25" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B25" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C25" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D25" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E25" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F25" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A26" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B26" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C26" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D26" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E26" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F26" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A27" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B27" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C27" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+            },
+            "SeatNo_D27" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E27" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F27" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A28" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B28" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C28" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D28" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E28" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F28" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_A29" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B29" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C29" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            },
+            "SeatNo_D29" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E29" : {
+				"available" : false,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F29" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : true,
+				"extraTaxCharges" : "200",
+				"type" : "eco"
+			},
+			"SeatNo_A30" : {
+				"available" : false,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "300",
+				"type" : "fc"
+			},
+			"SeatNo_B30" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_C30" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+			},
+			"SeatNo_D30" : {
+				"available" : true,
+				"seatType" : "window",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_E30" : {
+				"available" : true,
+				"seatType" : "middle",
+				"paidSeat" : false,
+				"extraTaxCharges" : "0",
+				"type" : "eco"
+			},
+			"SeatNo_F30" : {
+				"available" : true,
+				"seatType" : "asile",
+				"paidSeat" : false,
+				"extraTaxCharges" : "500",
+				"type" : "rsvd"
+            }
+		}
+	}
+}
