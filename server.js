@@ -143,7 +143,8 @@ app.post('/newMessages', function (req, res) {
   res.send('Hello')
 });
 
-
+let t = fs.readFileSync('seatFJson.json', 'utf8')
+t= t=="" ? {} :JSON.parse(t)
 
 const port = process.env.PORT || 8282
 app.listen(port, () => {
