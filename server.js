@@ -148,11 +148,11 @@ app.post('/api/sendWhatsAppWebCheckinNotification', function (req, res) {
   let seatInfo = fs.readFileSync('seatFJson.json', 'utf8')
   t= t=="" ? {} :JSON.parse(t)
   seatInfo= t=="" ? {} :JSON.parse(seatInfo)
-  for(var i=0;i<t.passengerInfo.length;i++){
+  for(var i=0;i< 5;i++){
     var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
     var data = {
       phone: t.passengerInfo[i].mob, // Receivers phone
-      body: `Hi ${t.passengerInfo[i].name},\nSeats are filling fast for your booked flight ${seatInfo.data.vendor} ${t.passengerInfo[i].flightNo} from ${seatInfo.data.originCity} to ${seatInfo.data.destinationCity} at ${seatInfo.data.timings}.\n\nPlease provide your preferred flight no eg:1C,2B\n\n`, // Сообщение
+      body: `Hi ${t.passengerInfo[i].name},\nSeats are filling fast for your booked flight ${seatInfo.data.vendor} ${t.passengerInfo[i].flightNo} from ${seatInfo.data.originCity} to ${seatInfo.data.destinationCity} at ${seatInfo.data.timings}.\n\nPlease provide your preferred flight no eg:1C,2B\n\n\n😢 - Unavailable\n😊 -  Available Free Seats\n\n   *Available Paid Seats*:\n🤗 - 3XL Seats @ ₹ 600\n🤑 - 6 Paid Seats @ ₹ 300\n😎 - 14 Paid Seats @ ₹ 200\n\n   *PLANE'S FRONT*\n`, // Сообщение
   };
   request({
       url: url,
@@ -165,7 +165,7 @@ app.post('/api/sendWhatsAppWebCheckinNotification', function (req, res) {
 
 
 
-const port = process.env.PORT || 8989
+const port = process.env.PORT || 8282
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`)
 })
