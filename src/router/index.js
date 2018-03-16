@@ -5,7 +5,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 // route-level code splitting
-const MonumentList = () => import('../views/monumentList.vue')
+const dashboard = () => import('../views/dashboard.vue')
 
 
 
@@ -14,7 +14,7 @@ export function createRouter () {
     mode: 'history',
     scrollBehavior: () => ({ y: 0 }),
     routes: [
-      { path: `/home`,name:'MonumentList', component: MonumentList },
+      { path: `/home`,name:'dashboard', component: dashboard },
       { path: '/', redirect: `/home`},
       { path: '*', redirect: '/' }
     ]

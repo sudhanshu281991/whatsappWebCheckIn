@@ -1,6 +1,11 @@
+<<<<<<< Updated upstream
 {
     "passengerInfo" : {
         "passenger1" : {
+=======
+[
+         {
+>>>>>>> Stashed changes
             "name" : "Ravi",
             "type" : "Female",
             "age"  : "29",
@@ -9,7 +14,7 @@
             "authNo"  : "DL-5732",
             "flightNo" : "A1-315"
         },
-        "passenger2" : {
+       {
             "name" : "Sudhanshu",
             "type" : "Female",
             "age"  : "27",
@@ -18,7 +23,7 @@
             "authNo"  : "PP-2341",
             "flightNo" : "A1-315"
         },
-        "passenger3" : {
+        {
             "name" : "Vivek",
             "type" : "Male",
             "age"  : "26",
@@ -27,7 +32,7 @@
             "authNo"  : "AOXPT3670C",
             "flightNo" : "A1-315"
         },
-        "passenger4" : {
+       {
             "name" : "Vinay",
             "type" : "Male",
             "age"  : "29",
@@ -36,7 +41,7 @@
             "authNo"  : "DL-5740",
             "flightNo" : "A1-315"
         },
-        "passenger5" : {
+         {
             "name" : "Som",
             "type" : "Male",
             "age"  : "32",
@@ -45,5 +50,5 @@
             "authNo"  : "98218732093203",
             "flightNo" : "A1-315"
         }
-    }
-}
+ 
+	]
