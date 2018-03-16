@@ -253,7 +253,7 @@
 			},
 			"SeatNo_D-06" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -267,7 +267,7 @@
 			},
 			"SeatNo_F-06" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -295,7 +295,7 @@
             },
             "SeatNo_D-07" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -309,7 +309,7 @@
 			},
 			"SeatNo_F-07" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -337,7 +337,7 @@
 			},
 			"SeatNo_D-08" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -351,7 +351,7 @@
 			},
 			"SeatNo_F-08" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -379,7 +379,7 @@
             },
             "SeatNo_D-09" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -393,7 +393,7 @@
 			},
 			"SeatNo_F-09" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -421,7 +421,7 @@
 			},
 			"SeatNo_D-10" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -435,7 +435,7 @@
 			},
 			"SeatNo_F-10" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -463,7 +463,7 @@
             },
             "SeatNo_D-11" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -477,7 +477,7 @@
 			},
 			"SeatNo_F-11" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -505,7 +505,7 @@
 			},
 			"SeatNo_D-12" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -519,7 +519,7 @@
 			},
 			"SeatNo_F-12" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -547,7 +547,7 @@
             },
             "SeatNo_D-13" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -561,7 +561,7 @@
 			},
 			"SeatNo_F-13" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -589,7 +589,7 @@
 			},
 			"SeatNo_D-14" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -603,7 +603,7 @@
 			},
 			"SeatNo_F-14" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -631,7 +631,7 @@
             },
             "SeatNo_D-15" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -645,7 +645,7 @@
 			},
 			"SeatNo_F-15" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -673,7 +673,7 @@
 			},
 			"SeatNo_D-16" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -687,7 +687,7 @@
 			},
 			"SeatNo_F-16" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -715,7 +715,7 @@
             },
             "SeatNo_D-17" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -729,7 +729,7 @@
 			},
 			"SeatNo_F-17" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -757,7 +757,7 @@
 			},
 			"SeatNo_D-18" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -771,7 +771,7 @@
 			},
 			"SeatNo_F-18" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -799,7 +799,7 @@
             },
             "SeatNo_D-19" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -813,7 +813,7 @@
 			},
 			"SeatNo_F-19" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -841,7 +841,7 @@
 			},
 			"SeatNo_D-20" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -855,7 +855,7 @@
 			},
 			"SeatNo_F-20" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -883,7 +883,7 @@
             },
             "SeatNo_D-21" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -897,7 +897,7 @@
 			},
 			"SeatNo_F-21" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -925,7 +925,7 @@
 			},
 			"SeatNo_D-22" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -939,7 +939,7 @@
 			},
 			"SeatNo_F-22" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -967,7 +967,7 @@
             },
             "SeatNo_D-23" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -981,7 +981,7 @@
 			},
 			"SeatNo_F-23" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -1009,7 +1009,7 @@
 			},
 			"SeatNo_D-24" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -1023,7 +1023,7 @@
 			},
 			"SeatNo_F-24" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -1051,7 +1051,7 @@
             },
             "SeatNo_D-25" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -1065,7 +1065,7 @@
 			},
 			"SeatNo_F-25" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -1093,7 +1093,7 @@
 			},
 			"SeatNo_D-26" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -1107,7 +1107,7 @@
 			},
 			"SeatNo_F-26" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -1135,7 +1135,7 @@
             },
             "SeatNo_D-27" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -1149,7 +1149,7 @@
 			},
 			"SeatNo_F-27" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -1177,7 +1177,7 @@
 			},
 			"SeatNo_D-28" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -1191,7 +1191,7 @@
 			},
 			"SeatNo_F-28" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
@@ -1219,7 +1219,7 @@
             },
             "SeatNo_D-29" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -1233,7 +1233,7 @@
 			},
 			"SeatNo_F-29" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : true,
 				"extraTaxCharges" : "200",
 				"type" : "eco"
@@ -1261,7 +1261,7 @@
 			},
 			"SeatNo_D-30" : {
 				"available" : true,
-				"seatType" : "window",
+				"seatType" : "asile",
 				"paidSeat" : false,
 				"extraTaxCharges" : "0",
 				"type" : "eco"
@@ -1275,7 +1275,7 @@
 			},
 			"SeatNo_F-30" : {
 				"available" : true,
-				"seatType" : "asile",
+				"seatType" : "window",
 				"paidSeat" : false,
 				"extraTaxCharges" : "500",
 				"type" : "rsvd"
