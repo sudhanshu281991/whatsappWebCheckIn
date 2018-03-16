@@ -233,8 +233,6 @@ app.post('/api/sendWhatsAppWebCheckinNotification', function (req, res) {
   res.send('Hello')
 });
 
-
-
 const port = process.env.PORT || 8282
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`)
