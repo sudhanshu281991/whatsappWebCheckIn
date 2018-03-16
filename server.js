@@ -74,6 +74,7 @@ app.use('./yatra_asi/asi-service-worker.js', serve('./yatra_asi/asi-service-work
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use('/asi',routes)
+app.use(bodyParser.json())
 
 // since this app has no user-specific content, every page is micro-cacheable.
 // if your app involves user-specific content, you need to implement custom
@@ -122,6 +123,22 @@ function render (req, res) {
 app.get('*', isProd ? render : (req, res) => {
   readyPromise.then(() => render(req, res))
 })
+
+app.post('/newMessages', function (req, res) {
+  var data = req.body; // New messages in the "body" variable
+  console.log(data)
+  var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
+  var data = {
+    phone: data.messages[0].chatId.split('@')[0], // Receivers phone
+    body: 'Your Seat has been booked', // Сообщение
+};
+// Send a request
+request({
+    url: url,
+    method: "POST",
+    json: data
+});//Response does not matter
+});
 
 
 
