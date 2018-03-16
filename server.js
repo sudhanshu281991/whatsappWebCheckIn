@@ -126,11 +126,23 @@ app.get('*', isProd ? render : (req, res) => {
 app.post('/newMessages', function (req, res) {
   var data = req.body;
   console.log(data)
-  if(!data.messages[0].fromMe){
+  if(!data.messages[0].fromMe && data.messages[0].type == 'chat'){
        var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
         var data = {
           phone: data.messages[0].chatId.split('@')[0], // Receivers phone
           body: 'Your Seat has been booked', // Сообщение
+      };
+      // Send a request
+      request({
+          url: url,
+          method: "POST",
+          json: data
+      });//Response does not matter
+  }else if(!data.messages[0].fromMe && data.messages[0].type != 'chat'){
+        var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
+        var data = {
+          phone: data.messages[0].chatId.split('@')[0], // Receivers phone
+          body: 'Please send in the text format', // Сообщение
       };
       // Send a request
       request({
@@ -145,14 +157,72 @@ app.post('/newMessages', function (req, res) {
 
 app.post('/api/sendWhatsAppWebCheckinNotification', function (req, res) {
   let t = fs.readFileSync('userProf.json', 'utf8')
-  let seatInfo = fs.readFileSync('seatFJson.json', 'utf8')
-  t= t=="" ? {} :JSON.parse(t)
+  var seatInfo = fs.readFileSync('seatFJson.json', 'utf8')
   seatInfo= t=="" ? {} :JSON.parse(seatInfo)
-  for(var i=0;i< 5;i++){
+  var text = ""
+  var start = 1
+  console.log(seatInfo)
+  var rows = seatInfo.data.flightInfra.rows
+  var column = seatInfo.data.flightInfra.column
+  var columnArr = ['A', 'B', 'C', 'D', 'E', 'F']
+  var seats = seatInfo.data.seatMatrix
+  var len = Object.keys(seats).length
+  for (i=0; i <= column; i++) {
+    if(i == 0) {
+      text = "     "
+    }else {
+      if(i < column) {
+        text = text +"   "+ columnArr[i-1] + "   "
+      }else {
+        text = text +"   "+ columnArr[i-1] + "\n"
+      }
+    }
+    if(i%3 == 0 && i>0){
+      text = text + ""
+    }
+  }
+  for (var keys in seats) {
+
+    if(start%column == 1)
+      text = text + keys.split('_')[1].split('-')[1] + "  "
+
+    if(start%column < 6) {
+      if(seats[keys].available == true && seats[keys].paidSeat == false) {
+          text = text + '😊' + "  "
+      }else if(seats[keys].available == false) {
+        text = text + '😢' + "  "
+      }else if(seats[keys].available == true && seats[keys].paidSeat == true) {
+          if(seats[keys].extraTaxCharges == '200'){
+          text = text + '😎' + "  "
+          }
+          if(seats[keys].extraTaxCharges == '300'){
+          text = text + '🤑' + "  "
+          }
+          if(seats[keys].extraTaxCharges == '500'){
+          text = text + '🤗' + "  "
+          }
+      }
+    }
+
+    if(start%column ==3){
+        text = text +"   "
+    }
+
+    if(start%column == 0)
+      text = text + "\n"
+
+    start = start + 1
+  }
+      console.log('............................')
+      console.log(text)
+      console.log('............................')
+  t= t=="" ? {} :JSON.parse(t)
+  
+  for(var i=0;i< 7;i++){
     var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
     var data = {
       phone: t.passengerInfo[i].mob, // Receivers phone
-      body: `Hi ${t.passengerInfo[i].name},\nSeats are filling fast for your booked flight ${seatInfo.data.vendor} ${t.passengerInfo[i].flightNo} from ${seatInfo.data.originCity} to ${seatInfo.data.destinationCity} at ${seatInfo.data.timings}.\n\nPlease provide your preferred flight no eg:1C,2B\n\n\n😢 - Unavailable\n😊 -  Available Free Seats\n\n   *Available Paid Seats*:\n🤗 - 3XL Seats @ ₹ 600\n🤑 - 6 Paid Seats @ ₹ 300\n😎 - 14 Paid Seats @ ₹ 200\n\n   *PLANE'S FRONT*\n`, // Сообщение
+      body: `Hi ${t.passengerInfo[i].name},\nSeats are filling fast for your booked flight ${seatInfo.data.vendor} ${t.passengerInfo[i].flightNo} from ${seatInfo.data.originCity} to ${seatInfo.data.destinationCity} at ${seatInfo.data.timings}.\n\nPlease provide your preferred flight no eg:1C,2B\n\n\n😢 - Unavailable\n😊 -  Available Free Seats\n\n   *Available Paid Seats*:\n🤗 - 3XL Seats @ ₹ 500\n🤑 - 6 Paid Seats @ ₹ 300\n😎 - 14 Paid Seats @ ₹ 200\n\n   *PLANE'S FRONT*\n\n${text}\n\n   *PLANE'S BACK*`, // Сообщение
   };
   request({
       url: url,
