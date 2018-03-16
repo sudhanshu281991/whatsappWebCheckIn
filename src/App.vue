@@ -23,5 +23,24 @@
         margin: 0;
         padding: 0;
     }
-	
+	li {
+		list-style-type: none;
+	}
+	.ico-sprite {
+        background-image: url(assets/sprite.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+		width: 40px;
+		height: 45px;
+    }
+	.col-left {
+		float: left;
+    	width: 40%;
+	}
+	.col-right {
+		float: right;
+		width: 35%;
+		margin-left: 5%;
+	}
 </style>
