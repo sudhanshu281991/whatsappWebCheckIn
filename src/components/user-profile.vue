@@ -14,7 +14,7 @@
 				<td>{{item.mob}}</td> 
 			</tr> 
 		</table>
-		<button type="button" class="btn-red">Send Notification</button>
+		<button type="button" class="btn-red" @click="sendNotification()">Send Notification</button>
 	</div>
 </template>
      
@@ -27,7 +27,14 @@
                   myJson: json,
 				  userArr: []
               }
-          },
+		  },
+		  methods:{
+			  sendNotification(){
+                  this.$http.post('/api/sendWhatsAppWebCheckinNotification').then(response => {
+                  }, response => {
+                  });
+			  }
+		  },
 		  mounted () {
 			  var userInfo = this.myJson.passengerInfo
 			  for(var keys in userInfo) {

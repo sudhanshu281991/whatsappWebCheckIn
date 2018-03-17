@@ -125,20 +125,68 @@ app.get('*', isProd ? render : (req, res) => {
 
 app.post('/newMessages', function (req, res) {
   var data = req.body;
-  console.log(data)
   if(!data.messages[0].fromMe && data.messages[0].type == 'chat'){
        var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
-        var data = {
-          phone: data.messages[0].chatId.split('@')[0], // Receivers phone
-          body: 'Your Seat has been booked', // Сообщение
-      };
-      // Send a request
-      request({
-          url: url,
-          method: "POST",
-          json: data
-      });//Response does not matter
-  }else if(!data.messages[0].fromMe && data.messages[0].type != 'chat'){
+       var askedSeats = data.messages[0].body.split(',')
+        var text = ""
+        var seatInfo = fs.readFileSync('seatFJson.json', 'utf8')
+        seatInfo= seatInfo=="" ? {} :JSON.parse(seatInfo)
+       for(var i=0;i<askedSeats.length;i++){
+        
+         var seatNo = askedSeats[i].substring(0, 1).toUpperCase()+'-'+askedSeats[i].substring(1, askedSeats[i].length).toUpperCase()
+         if(seatMapUI.data.seatMatrix[`SeatNo_${seatNo}`] && seatMapUI.data.seatMatrix[`SeatNo_${seatNo}`].available){
+           text = text+`Your Seat ${askedSeats[i]} has been confirmed\nChoose hotels in your visiting city.\n*Check below url*\n\nhttps://www.yatra.com/hotels/hotels-in-delhi\n`
+         }else if(seatMapUI.data.seatMatrix[`SeatNo_${seatNo}`] && !seatMapUI.data.seatMatrix[`SeatNo_${seatNo}`].available){
+           text =text+`${askedSeats[i].toUpperCase()} has been booked by someone else on ${seatInfo.data.vendor} ${seatInfo.data.flightNumber} from ${seatInfo.data.originCity} to ${seatInfo.data.destinationCity} at ${seatInfo.data.timings}.\n\nPlease provide your preferred flight no eg:1C,2B\n\n\n😢 - Unavailable\n😊 -  Available Free Seats\n\n   *Available Paid Seats*:\n🤗 - 3XL Seats @ ₹ 500\n🤑 - 6 Paid Seats @ ₹ 300\n😎 - 14 Paid Seats @ ₹ 200\n\n   *PLANE'S FRONT*\n\n${text}\n\n   *PLANE'S BACK*\n` // Сообщение
+         }else {
+           text = text +`You have given wrong format ${askedSeats[i].toUpperCase()} .Please select in following format\n\n*A01*  *B10*\n`
+         }
+       }
+       var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
+       var data = {
+         phone: data.messages[0].chatId.split('@')[0], // Receivers phone
+         body: text, // Сообщение
+     };
+     request({
+         url: url,
+         method: "POST",
+         json: data
+     });//Response does not matter
+      //  for(var i=0; i < askedSeats.length ; i++){
+      //   var seatNo = askedSeats[i].substring(0, 1).toUpperCase()+'-'+askedSeats[i].substring(1, askedSeats[i].length).toUpperCase()
+      //   if(seatMapUI.data.seatMatrix[`SeatNo_${seatNo}`] && seatMapUI.data.seatMatrix[`SeatNo_${seatNo}`].available){
+      //        seatMapUI.data.seatMatrix[`SeatNo_${seatNo}`].available = false
+      //        var data = {
+      //          phone: data.messages[0].chatId.split('@')[0], // Receivers phone
+      //          body: `Your Seat ${askedSeats[i]} has been confirmed\nChoose hotels in your visiting city.\n*Check below url*\n\nhttps://www.yatra.com/hotels/hotels-in-delhi`, // Сообщение
+      //      };
+      //      request({
+      //          url: url,
+      //          method: "POST",
+      //          json: data
+      //      });//Response does not matter
+      //   } else if(seatMapUI.data.seatMatrix[`SeatNo_${seatNo}`] && !seatMapUI.data.seatMatrix[`SeatNo_${seatNo}`].available){
+      //    let t = fs.readFileSync('userProf.json', 'utf8')
+      //    var text = bookTicket()
+      //    t= t=="" ? {} :JSON.parse(t)
+      //    var seatInfo = fs.readFileSync('seatFJson.json', 'utf8')
+      //    seatInfo= seatInfo=="" ? {} :JSON.parse(seatInfo)
+      //     var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
+      //      var data = {
+      //        phone: data.messages[0].chatId.split('@')[0], // Receivers phone
+      //        body: `This seat has been booked by someone else on ${seatInfo.data.vendor} ${seatInfo.data.flightNumber} from ${seatInfo.data.originCity} to ${seatInfo.data.destinationCity} at ${seatInfo.data.timings}.\n\nPlease provide your preferred flight no eg:1C,2B\n\n\n😢 - Unavailable\n😊 -  Available Free Seats\n\n   *Available Paid Seats*:\n🤗 - 3XL Seats @ ₹ 500\n🤑 - 6 Paid Seats @ ₹ 300\n😎 - 14 Paid Seats @ ₹ 200\n\n   *PLANE'S FRONT*\n\n${text}\n\n   *PLANE'S BACK*`, // Сообщение
+      //    };
+      //    request({
+      //        url: url,
+      //        method: "POST",
+      //        json: data
+      //    });//Response does not matter
+      //   }else{
+            
+      //   }
+      //  }
+      
+  } else if(!data.messages[0].fromMe && data.messages[0].type != 'chat'){
         var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
         var data = {
           phone: data.messages[0].chatId.split('@')[0], // Receivers phone
@@ -155,13 +203,13 @@ app.post('/newMessages', function (req, res) {
   res.send('Hello')
 });
 
-app.post('/api/sendWhatsAppWebCheckinNotification', function (req, res) {
-  let t = fs.readFileSync('userProf.json', 'utf8')
+var seatMapUI ;
+function bookTicket(){
   var seatInfo = fs.readFileSync('seatFJson.json', 'utf8')
-  seatInfo= t=="" ? {} :JSON.parse(seatInfo)
+  seatInfo= seatInfo=="" ? {} :JSON.parse(seatInfo)
+  seatMapUI =seatInfo
   var text = ""
   var start = 1
-  console.log(seatInfo)
   var rows = seatInfo.data.flightInfra.rows
   var column = seatInfo.data.flightInfra.column
   var columnArr = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -213,16 +261,20 @@ app.post('/api/sendWhatsAppWebCheckinNotification', function (req, res) {
 
     start = start + 1
   }
-      console.log('............................')
-      console.log(text)
-      console.log('............................')
+  return text
+}
+
+app.post('/api/sendWhatsAppWebCheckinNotification', function (req, res) {
+  let t = fs.readFileSync('userProf.json', 'utf8')
+  var text = bookTicket()
   t= t=="" ? {} :JSON.parse(t)
-  
-  for(var i=0;i< 7;i++){
+  var seatInfo = fs.readFileSync('seatFJson.json', 'utf8')
+  seatInfo= seatInfo=="" ? {} :JSON.parse(seatInfo)
+  for(var i=0 ;i< t.passengerInfo.length;i++){
     var url = 'https://eu1.whatsapp.chat-api.com/instance889/message?token=kho9m25qwhvygj66';
     var data = {
       phone: t.passengerInfo[i].mob, // Receivers phone
-      body: `Hi ${t.passengerInfo[i].name},\nSeats are filling fast for your booked flight ${seatInfo.data.vendor} ${t.passengerInfo[i].flightNo} from ${seatInfo.data.originCity} to ${seatInfo.data.destinationCity} at ${seatInfo.data.timings}.\n\nPlease provide your preferred flight no eg:1C,2B\n\n\n😢 - Unavailable\n😊 -  Available Free Seats\n\n   *Available Paid Seats*:\n🤗 - 3XL Seats @ ₹ 500\n🤑 - 6 Paid Seats @ ₹ 300\n😎 - 14 Paid Seats @ ₹ 200\n\n   *PLANE'S FRONT*\n\n${text}\n\n   *PLANE'S BACK*`, // Сообщение
+      body: `Hi ${t.passengerInfo[i].name},\nSeats are filling fast for your booked flight ${seatInfo.data.vendor} ${t.passengerInfo[i].flightNo} from ${seatInfo.data.originCity} to ${seatInfo.data.destinationCity} at ${seatInfo.data.timings}.\n\nPlease provide your preferred flight no eg:C01,B10\n\n\n😢 - Unavailable\n😊 -  Available Free Seats\n\n   *Available Paid Seats*:\n🤗 - 3XL Seats @ ₹ 500\n🤑 - 6 Paid Seats @ ₹ 300\n😎 - 14 Paid Seats @ ₹ 200\n\n   *PLANE'S FRONT*\n\n${text}\n\n   *PLANE'S BACK*`, // Сообщение
   };
   request({
       url: url,
