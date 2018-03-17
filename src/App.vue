@@ -32,7 +32,7 @@
         display: inline-block;
         vertical-align: middle;
 		width: 40px;
-		height: 45px;
+		height: 32px;
     }
 	.col-left {
 		float: left;
@@ -40,7 +40,17 @@
 	}
 	.col-right {
 		float: right;
-		width: 35%;
+		width: 385px;
 		margin-left: 5%;
+	}
+	.yatra-asi {
+		max-width: 1078px;
+    margin: 30px auto;
+	}
+	.pabs {
+		position: absolute;
+	}
+	.prel {
+		position: relative;
 	}
 </style>

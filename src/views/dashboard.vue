@@ -1,5 +1,6 @@
 <template>
   <div>
+   <h1>WebcheckIn Dashboard</h1>
     <user-profile class="col-left"></user-profile>
     <seat-map class="col-right"></seat-map> 
   </div>
@@ -19,4 +20,9 @@
 </script>
 
 <style scoped lang="scss">
+	h1 {
+		text-align: center;
+    margin-bottom: 50px;
+    text-decoration: underline;
+	}
  </style>
